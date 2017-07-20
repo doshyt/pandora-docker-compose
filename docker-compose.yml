@@ -4,7 +4,7 @@ services:
   pandora-mysql:
     image: pandorafms/pandorafms-mysql:6
     volumes:
-      - "./db2:/var/lib/mysql:rw"
+      - "./db:/var/lib/mysql:rw"
       - "/etc/localtime:/etc/localtime:ro"
     environment:
       MYSQL_ROOT_PASSWORD: "StrongPasswordRoot"
