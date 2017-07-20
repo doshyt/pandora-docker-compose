@@ -8,9 +8,10 @@ Pandora FMS server instance composed and run by Docker with help of `docker-comp
 Docker-compose creates a bridged network for the containers in the subnet 172.35.0.0/24. It is designed to work out-of-box but in case of changes in the network configuration, make sure to change server IP in the Postfix configuration under `server-config/postfix/main.cf`
 
 How to start the server:
-1. Copy files to target docker host.
-2. Create empty folder `./db`
-3. `docker-compose up`
+1. Change password for Server root user and MySQL DB to secure in `docker-compose.yml`.
+2. Copy files to target docker host.
+3. Create empty folder `./db`
+4. `docker-compose up`
 
 To bring it down (it destroys containers!):
 1. `docker-compose down`
