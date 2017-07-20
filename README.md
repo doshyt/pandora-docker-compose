@@ -1,7 +1,7 @@
 # pandora-docker-compose
-Pandora FMS server instance composed and run by Docker with help of docker-compose. Compatible with Centos 6 and Docker-compose file v2.1.
+Pandora FMS server instance composed and run by Docker with help of `docker-compose`. Compatible with Centos 6+ and `docker-compose` file v2.1 (not 3!).
 
-* Allows to store Pandora Server DB files on the Docker host by mapping the DB data folder to lcoal.
+* Stores Pandora Server DB files on the Docker host by mapping the DB data folder to lcoal.
 * Includes Postfix service configuration for sending emails to the Pandora admins.
 * Syncronizes docker host time with container via mapping `/etc/localtime` to containers.
 
